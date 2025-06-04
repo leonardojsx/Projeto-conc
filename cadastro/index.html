@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+  <main>
+    <section class="container">
+      <div class="formulario">
+        <h1>Adicione seus dados para cadastrar-se</h1>
+        <form action="cad.php" method="post">
+          <div class="campo">
+            <label for="inome">Nome</label>
+            <input placeholder="Nome" class="cinput" type="text" name="nome" id="cnome" >
+          </div>
+          <div class="campo">
+            <label for="isobre">Sobrenome</label>
+            <input placeholder="Sobrenome" class="cinput" type="text" name="sobrenome" id="csobre">
+          </div>
+          <div class="campo">
+            <label for="iemail">Email</label>
+            <input placeholder="E-mail" class="cinput" type="email" name="email" id="cemail">
+          </div>
+          <div class="campo">
+            <label for="isenha">Senha</label>
+            <input placeholder="Senha" class="cinput" type="password" name="senha" id="csenha">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
