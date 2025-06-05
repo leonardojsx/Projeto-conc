@@ -3,32 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cadastro</title>
   <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
   <main>
     <section class="container">
       <div class="formulario">
-        <h1>Adicione seus dados para cadastrar-se</h1>
+        <h1>cadastre-se</h1>
         <form action="cad.php" method="post">
           <div class="campo">
-            <label for="inome">Nome</label>
-            <input placeholder="Nome" class="cinput" type="text" name="nome" id="cnome" >
+            <label for="inome" class="sr-only">Nome</label>
+            <input placeholder="Nome" class="input-campo" type="text" name="nome" id="inome" required>
           </div>
           <div class="campo">
-            <label for="isobre">Sobrenome</label>
-            <input placeholder="Sobrenome" class="cinput" type="text" name="sobrenome" id="csobre">
+            <label for="isobre" class="sr-only">Sobrenome</label>
+            <input placeholder="Sobrenome" class="input-campo" type="text" name="sobrenome" id="isobre" required>
           </div>
           <div class="campo">
-            <label for="iemail">Email</label>
-            <input placeholder="E-mail" class="cinput" type="email" name="email" id="cemail">
+            <label for="iemail" class="sr-only">Email</label>
+            <input placeholder="E-mail" class="input-campo" type="email" name="email" id="iemail" required>
           </div>
           <div class="campo">
-            <label for="isenha">Senha</label>
-            <input placeholder="Senha" class="cinput" type="password" name="senha" id="csenha">
+            <label for="isenha" class="sr-only">Senha</label>
+            <input placeholder="Senha" class="input-campo" type="password" name="senha" id="isenha" required minlength="8">
+          </div>
+          <div class="campo">
+            <input type="submit" value="Cadastrar" class="input-campo botao">
           </div>
         </form>
+
+        <p class="voltar-login">
+          Já tem uma conta? <a href="../Pagina1/index.html">Entrar</a>
+        </p>
       </div>
     </section>
   </main>
