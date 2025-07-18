@@ -46,10 +46,6 @@ body, html {
   align-items: center;
 }
 
-.mobile-menu {
-cursor: pointer;
-}
-
 .nav-list a{
 color: white;
 text-decoration: none;
