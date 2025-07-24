@@ -8,82 +8,107 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 
 <body>
   <nav id="sidebar">
     <div id="sidebar-content">
       <div id="usuario">
-        <img src="../imagens/perfil.jpg" alt="perfil" width="100px" id="perfil">
-        <p>
+        <img src="../imagens/perfil.jpg" alt="perfil" id="foto-perfil">
+        <p id="perfil-texto">
+
           <span class="perfil-descricao">
             Seu nome
           </span>
+
           <span class="perfil-descricao">
-            Apelido
+            Sobrenome
           </span>
+
         </p>
-
-        <ul id="lista-menu">
-
-          <li class="menu-item">
-            <a href="#">
-              <i class="fa-solid fa-chart-line"></i>
-              <span class="menu-descricao">
-                Fipe
-              </span>
-            </a>
-          </li>
-
-          <li class="menu-item">
-            <a href="#">
-              <i class="fa-solid fa-user"></i>
-              <span class="menu-descricao">
-                Usuario
-              </span>
-            </a>
-          </li>
-
-          <li class="menu-item">
-            <a href="#">
-              <i class="fa-solid fa-sack-dollar"></i>
-              <span class="menu-descricao">
-                Minhas vendas
-              </span>
-            </a>
-          </li>
-
-          <li class="menu-item">
-            <a href="#">
-              <i class="fa-solid fa-basket-shopping"></i>
-              <span class="menu-descricao">
-                Minhas compras
-              </span>
-            </a>
-          </li>
-
-          <li class="menu-item">
-            <a href="#">
-              <i class="fa-solid fa-wallet"></i>
-              <span class="menu-descricao">
-                Carteira
-              </span>
-            </a>
-          </li>
-
-          <li class="menu-item">
-            <a href="#">
-              <i class="fa-solid fa-gear"></i>
-              <span class="menu-descricao">
-                Configurações
-              </span>
-            </a>
-          </li>
-
-        </ul>
       </div>
+
+      <ul id="lista-menu">
+
+        <li class="menu-item active">
+          <a href="#">
+            <i class="fa-solid fa-chart-line"></i>
+            <span class="menu-descricao">
+              Fipe
+            </span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="menu-descricao">
+              Usuario
+            </span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <span class="menu-descricao">
+              Vendas
+            </span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span class="menu-descricao">
+              Compras
+            </span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#">
+            <i class="fa-solid fa-wallet"></i>
+            <span class="menu-descricao">
+              Carteira
+            </span>
+          </a>
+        </li>
+
+        <li class="menu-item">
+          <a href="#">
+            <i class="fa-solid fa-gear"></i>
+            <span class="menu-descricao">
+              Configurações
+            </span>
+          </a>
+        </li>
+
+      </ul>
+
+      <button id="abrir-btn">
+          <i id="abrir-btn-icon" class="fa-solid fa-chevron-right"></i>
+      </button>
+
     </div>
+
+    <div id="sair">
+      <button id="sair-btn">
+        <i id="sair-btn-icon" class="fa-solid fa-right-from-bracket"></i>
+        <span class="menu-descricao">
+          Sair
+        </span>
+      </button>
+    </div>
+
   </nav>
+
+  <main>
+    <h1>Titulo</h1>
+  </main>
+
+  <script src="script/script.js" defer></script>
 </body>
 
 </html>
