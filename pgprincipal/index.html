@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/style.css">
 </head>
 
 <body>
   <nav id="sidebar">
     <div id="sidebar-content">
       <div id="usuario">
-        <img src="../imagens/perfil.jpg" alt="perfil" id="foto-perfil">
+        <img src="../imagens/perfil.png" alt="perfil" id="foto-perfil">
         <p id="perfil-texto">
 
           <span class="perfil-descricao">
@@ -88,7 +88,7 @@
       </ul>
 
       <button id="abrir-btn">
-          <i id="abrir-btn-icon" class="fa-solid fa-chevron-right"></i>
+        <i id="abrir-btn-icon" class="fa-solid fa-chevron-right"></i>
       </button>
 
     </div>
@@ -105,7 +105,26 @@
   </nav>
 
   <main>
-    <h1>Titulo</h1>
+    <div id="pesquisar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" name="pesquisar" id="pesquisar-inp" placeholder="Pesquisar">
+    </div>
+
+    <div id="vcontent">
+      <img src="../imagens/ferrari.jpg" alt="" id="ft-veiculos">
+
+      <div id="vdesc">
+        <span class="veiculos-descricao">
+          <p>Ferrari</p>
+        </span>
+        <span class="veiculos-descricao">
+          <p>Valor: <strong> R$ 0,00</strong></p>
+        </span>
+      </div>
+
+    </div>
+
+
   </main>
 
   <script src="script/script.js" defer></script>

@@ -16,8 +16,13 @@ body {
 }
 
 main {
+width: 100vw;
 padding: 10px;
-
+display: flex;
+justify-content: flex-start;
+margin-left: 85px;
+align-items: center;
+flex-direction: column;
 }
 
 #sidebar {
@@ -27,7 +32,7 @@ padding: 10px;
   background-color: rgb(55, 55, 55);
   height: 100vh;
   border-radius: 0px 18px 18px 0px;
-  position: relative;
+  position: absolute;
   min-width: 82px;
   transition: all .5s;
 }
@@ -166,4 +171,61 @@ padding: 12px;
 #sidebar.open-sidebar .menu-item a {
   justify-content: flex-start;
   gap: 14px;
+}
+
+#pesquisar {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+#pesquisar-inp {
+padding: 5px;
+border-radius: 20px;
+border: none;
+}
+
+#pesquisar-inp:focus {
+  outline: none;
+}
+
+#vcontent {
+ box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.667);
+ border-radius: 20px;
+cursor: pointer;
+transition: transform .5s ease;
+}
+
+#ft-veiculos {
+  width: 70vw;
+  height: 20vh;
+  background: center center no-repeat;
+  background-size: cover;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  display: flex;
+  
+}
+
+#vcontent:hover {
+  transform: scale(1.05);
+} 
+
+#vdesc {
+  height: 50px;
+  background-color: rgb(55, 55, 55);
+  border-radius: 0px 0px 20px 20px;
+   text-align: center;
+   font-weight: 600;
+   color: rgb(166, 0, 0);
+  box-shadow: inset 0px 2px 20px rgba(0, 0, 0, 0.37);
+
+}  
+
+#vdesc span:first-child {
+  text-transform: uppercase;
 }
